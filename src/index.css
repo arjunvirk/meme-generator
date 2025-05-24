@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: lightslategray;
+}
+
+header > img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Main layout */
+main {
+    padding: 20px;
+    margin-inline: auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form section */
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lab {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.box input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: lightslategray;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.box button:hover {
+    background: slategray;
+}
+
+/* Meme container */
+.meme {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.meme > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Text on image */
+.meme > span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    padding: 0 10px;
+    word-break: break-word;
+    width: 90%;
+}
+
+.top {
+    top: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .box input,
+    .box button {
+        font-size: 1rem;
+    }
+
+    .meme > span {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
